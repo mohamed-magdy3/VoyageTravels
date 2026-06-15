@@ -1,0 +1,6 @@
+{
+  "name": "Voyage Travels",
+  "description": "A premium travel company booking and exploration platform, featuring beautiful destinations, customized itineraries, real-time ticket selection, seat customization, and interactive travel experiences.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

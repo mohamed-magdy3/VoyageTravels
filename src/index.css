@@ -1,0 +1,91 @@
+@import "tailwindcss";
+
+:root, .theme-night {
+  --custom-emerald-300: #6ee7b7;
+  --custom-emerald-400: #34d399;
+  --custom-emerald-500: #10b981;
+  --custom-emerald-600: #059669;
+  
+  --custom-zinc-800: #1f2937;
+  --custom-zinc-850: #111827;
+  --custom-zinc-900: #0f172a;
+  --custom-zinc-950: #020617;
+
+  --custom-white: #ffffff;
+  --custom-zinc-100: #f3f4f6;
+  --custom-zinc-200: #e5e7eb;
+  --custom-zinc-300: #d1d5db;
+  --custom-zinc-400: #9ca3af;
+  --custom-zinc-500: #6b7280;
+  --custom-zinc-650: #374151;
+  --custom-zinc-700: #1f2937;
+}
+
+.theme-day {
+  --custom-emerald-300: #059669;
+  --custom-emerald-400: #10b981;
+  --custom-emerald-500: #059669;
+  --custom-emerald-600: #047857;
+  
+  --custom-zinc-800: #e5e5e0;
+  --custom-zinc-850: #eaeaea;
+  --custom-zinc-900: #ffffff;
+  --custom-zinc-950: #f6f6f4;
+
+  --custom-white: #0a0a0c;
+  --custom-zinc-100: #18181b;
+  --custom-zinc-200: #27272a;
+  --custom-zinc-300: #3f3f46;
+  --custom-zinc-400: #52525b;
+  --custom-zinc-500: #71717a;
+  --custom-zinc-650: #d4d4d8;
+  --custom-zinc-700: #e4e4e7;
+}
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+
+  --color-emerald-300: var(--custom-emerald-300);
+  --color-emerald-400: var(--custom-emerald-400);
+  --color-emerald-500: var(--custom-emerald-500);
+  --color-emerald-600: var(--custom-emerald-600);
+
+  --color-zinc-800: var(--custom-zinc-800);
+  --color-zinc-850: var(--custom-zinc-850);
+  --color-zinc-900: var(--custom-zinc-900);
+  --color-zinc-950: var(--custom-zinc-950);
+
+  --color-white: var(--custom-white);
+  --color-zinc-100: var(--custom-zinc-100);
+  --color-zinc-200: var(--custom-zinc-200);
+  --color-zinc-300: var(--custom-zinc-300);
+  --color-zinc-400: var(--custom-zinc-400);
+  --color-zinc-500: var(--custom-zinc-500);
+}
+
+/* Custom transitions for a fluid theme switch feel */
+body, div, header, main, section, footer, select, input, button {
+  transition: background-color 0.4s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.4s cubic-bezier(0.16, 1, 0.3, 1), color 0.3s ease;
+}
+
+/* Custom fade in animation utilities */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes zoomIn {
+  from { opacity: 0; transform: scale(0.96); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-zoom-in {
+  animation: zoomIn 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+
