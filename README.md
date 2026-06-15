@@ -1,5 +1,5 @@
 <div align="center">
-  <h1>🎮 gaming-site</h1>
+  <h1>🎮 Voyage Travels</h1>
   <p>Welcome to the Voyage Travels development repository.</p>
 </div>
 
